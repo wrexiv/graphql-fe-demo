@@ -1,0 +1,9 @@
+type Query {
+    users: [User!]! @field(resolver: "App\\GraphQL\\Queries\\Users")
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+}
