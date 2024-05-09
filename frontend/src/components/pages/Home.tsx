@@ -3,7 +3,6 @@ import { useGetUsersQuery } from "../../graphql/generated/graphql";
 
 const Home = () => {
   const { data, error } = useGetUsersQuery();
-  console.log(JSON.stringify(data));
 
   if (error) {
     console.error("Error fetching users:", error.message);
